@@ -1,7 +1,7 @@
 import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 
-async function getData() {
+export default async function GetTopBlogs() {
   const query = `*[_type == 'blog'] | order(_createAt desc){
   title,
     smallDescription,
@@ -11,12 +11,4 @@ async function getData() {
 
   const data = await client.fetch(query);
   return data;
-}
-
-export default async function Blogs() {
-  const data: simpleBlogCard[] = await getData();
-
-  console.log(data);
-
-  return <div>Blogs</div>;
 }

@@ -29,7 +29,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/blogs"
               className="text-gray-100 hover:text-purple-500 transition duration-300"
             >
               Blogs

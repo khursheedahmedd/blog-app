@@ -1,9 +1,8 @@
-import { simpleBlogCard } from "@/lib/interface";
 import GetTopBlogs from "./getTopBlogs";
 import { Button } from "./ui/button";
 
 export default async function TopBlogs() {
-  const topBlogs: simpleBlogCard[] = await GetTopBlogs();
+  const topBlogs = await GetTopBlogs();
 
   console.log(topBlogs);
 

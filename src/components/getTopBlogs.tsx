@@ -1,4 +1,3 @@
-import { simpleBlogCard } from "@/lib/interface";
 import { client } from "@/lib/sanity";
 
 export default async function GetTopBlogs() {
